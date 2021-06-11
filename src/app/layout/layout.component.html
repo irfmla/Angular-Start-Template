@@ -1,0 +1,61 @@
+<header class="header">
+    <nav class="navbar navbar-expand-lg px-4 py-2 shadow" style="background-color: #077b24;">
+        <a href="javascript:void(0);" class="sidebar-toggler text-white mr-4 mr-lg-5 lead"><i class="fas fa-align-left"></i></a>
+        <a href="#" class="navbar-brand font-weight-bold text-uppercase text-base text-white">{{titlep}}</a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+            <li class="nav-item dropdown ml-auto"><a id="userInfo" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="../assets/avatar.jpg" alt="admin" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
+                <div aria-labelledby="userInfo" class="dropdown-menu">
+                    <a routerLink="dashboard" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">Admin</strong></a>
+                    <a href="#" class="dropdown-item">Setting Profile</a>
+                    <div class="dropdown-divider"></div><a href="#" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="d-flex align-items-stretch">
+    <div id="sidebar" class="sidebar py-3">
+        <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
+        <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item">
+                <a routerLink="dashboard" class="sidebar-link text-white"><i class="fas fa-tachometer-alt mr-3 text-gray"></i> <span>Dashboard</span></a>
+            </li>
+            <li class="sidebar-list-item">
+                <a routerLink="customer" class="sidebar-link text-white"><i class="fas fa-users mr-3 text-gray"></i> <span>Customers</span></a>
+            </li>
+            <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#page1" aria-expanded="false" aria-controls="transactions" class="sidebar-link text-white"><i class="fab fa-product-hunt mr-3 text-gray"></i><span>Page 1</span></a>
+                <div id="page1" class="collapse">
+                    <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                        <li class="sidebar-list-item child"><a href="#" class="sidebar-link text-white"><span>Page 1 child</span></a></li>
+                        <li class="sidebar-list-item child"><a href="#" class="sidebar-link text-white"><span>Page 1 child</span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#page2" aria-expanded="false" aria-controls="transactions" class="sidebar-link text-white"><i class="fab fa-product-hunt mr-3 text-gray"></i><span>Page 2</span></a>
+                <div id="page2" class="collapse">
+                    <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                        <li class="sidebar-list-item child"><a href="#" class="sidebar-link text-white"><span>Page 2 child</span></a></li>
+                        <li class="sidebar-list-item child"><a href="#" class="sidebar-link text-white"><span>Page 2 child</span></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="page-holder w-100 d-flex flex-wrap">
+        <div class="container-fluid px-xl-5">
+           <router-outlet></router-outlet>
+        </div>
+        <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left text-primary">
+                        <p class="mb-2 mb-md-0">Angular Starter Template</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right text-gray-400">
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
