@@ -6,11 +6,6 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
-    postData = {
-        name: 'test',
-        height: 100,
-        padding: 100
-    }
     
     constructor(
     ) { }

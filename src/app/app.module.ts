@@ -4,14 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
-import { CustomerComponent } from './customer/customer.component';
+import { BaseComponent } from './base/base.component';
+import { SidemenuComponent } from './base/sidemenu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    CustomerComponent
+    BaseComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,

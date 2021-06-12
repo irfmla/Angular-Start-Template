@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { CustomerComponent } from './customer/customer.component';
-import { BaseComponent } from './base/base.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 const routes: Routes = [
     {
-        path: 'base',
-        component: BaseComponent,
+        path: 'dashboard',
+        component: DashboardComponent,
         children: [
             {
                 path: 'dashboard',
@@ -17,22 +15,13 @@ const routes: Routes = [
                 path: '',
                 redirectTo: 'dashboard',
                 pathMatch: 'full'
-            },
-            {
-                path: 'customer',
-                component: CustomerComponent
             }
         ]
     },
-    {
-        path: '',
-        redirectTo: 'base',
-        pathMatch: 'full'
-    }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class BaseRoutingModule { }
