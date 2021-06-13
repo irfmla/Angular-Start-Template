@@ -7,10 +7,13 @@ import { SidemenuComponent } from './sidemenu.component';
 
 
 @NgModule({
-  declarations: [BaseComponent],
-  imports: [
-    CommonModule,
-    BaseRoutingModule
-  ]
+    declarations: [
+        //BaseComponent,
+        //SidemenuComponent
+    ],
+    imports: [
+        CommonModule,
+        BaseRoutingModule
+    ]
 })
 export class BaseModule { }
